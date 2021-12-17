@@ -13,11 +13,4 @@ pipeline {
         sh "export DOCKER_CONFIG=\"\$(dirname \"\$DOCKER_CONFIG\")\"; docker push jenkinstraining.azurecr.io/sample-docker-image-63998:$BUILD_NUMBER"
       }
     }
-    stages {
-        stage('Test') {
-            steps {
-                echo "hi"
-            }
-        }
-    }
 }
